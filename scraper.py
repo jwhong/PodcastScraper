@@ -117,5 +117,9 @@ class PodbayShowScraper(object):
 
 if __name__=="__main__":
     scraper = PodbayShowScraper()
+    
+    ############################## BELOW IS THE LINE YOU SHOULD EDIT ###################################
     scraper.scrapeShowPage("http://podbay.fm/show/216713308")
+    ############################## ABOVE IS THE LINE YOU SHOULD EDIT ###################################
+    
     input("Press Enter to finish...")
