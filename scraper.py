@@ -17,12 +17,19 @@
 
 __author__ = 'JWhong'
 
-import urllib
+import urllib.request
 import re
 import time
 import sys
 import os
 import traceback
+
+if (sys.version_info > (3, 0)):
+    pass
+else:
+    print("Python 3 required!")
+    raw_input("Press Enter to finish...")
+    exit(0)
 
 class Reporter(object):
     """
@@ -109,5 +116,5 @@ class PodbayShowScraper(object):
 
 if __name__=="__main__":
     scraper = PodbayShowScraper()
-    scraper.scrapeShowPage("http://podbay.fm/show/278981407") # Freakonomics radio
-    #scraper.scrapeShowPage("http://podbay.fm/show/394775318") # 99% Invisible
+    scraper.scrapeShowPage("http://podbay.fm/show/216713308")
+    input("Press Enter to finish...")
