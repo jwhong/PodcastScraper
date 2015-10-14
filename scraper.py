@@ -17,12 +17,7 @@
 
 __author__ = 'JWhong'
 
-import urllib.request
-import re
-import time
 import sys
-import os
-import traceback
 
 if (sys.version_info > (3, 0)):
     pass
@@ -30,6 +25,12 @@ else:
     print("Python 3 required!")
     raw_input("Press Enter to finish...")
     exit(0)
+
+import urllib.request
+import re
+import time
+import os
+import traceback
 
 class Reporter(object):
     """
